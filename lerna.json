@@ -1,0 +1,12 @@
+{
+  "packages": ["packages/*"],
+  "version": "independent",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "registry": "http://localhost:4873",
+      "access": "public",
+      "allowBranch": ["master", "feature/*"]
+    }
+  }
+}
