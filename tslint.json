@@ -21,6 +21,6 @@
     "interface-name": true
   },
   "linterOptions": {
-    "exclude": ["config/**/*.js", "**/*.d.ts", "node_modules/**/*.ts"]
+    "exclude": ["config/**/*.js", "**/*.d.ts", "node_modules/**/*.ts", "packages/**/node_modules/**"]
   }
 }

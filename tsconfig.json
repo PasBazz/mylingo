@@ -11,7 +11,7 @@
     "rootDir": "./",
     "baseUrl": "./",
     "paths": {
-      "@taxi/*": ["packages/*/src"],
+      "@lingo/*": ["packages/*/src/"],
       "*": ["node_modules", "packages"]
     }
   },
@@ -20,5 +20,5 @@
     "babelCore": "@babel/core"
   },
   "include": ["packages"],
-  "exclude": ["node_modules", "packages/**/dist"]
+  "exclude": ["node_modules", "packages/**/lib", "packages/**/node_modules"]
 }
