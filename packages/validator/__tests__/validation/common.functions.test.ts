@@ -1,5 +1,4 @@
-import { verifyOnEmpty, verifyOnValidEmail, verifyOnValidUrl } from '../../src/validation/common.functions';
-import { validationErrors } from '../../src/validation/errors';
+import { validationErrors, verifyOnEmpty, verifyOnValidEmail, verifyOnValidUrl } from '@lingo/validator';
 
 describe('Common functions unit tests', () => {
   it.each([['', 'error message'], [undefined, 'error message'], [null, 'error message']])(

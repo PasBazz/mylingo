@@ -29,4 +29,9 @@ module.exports = {
   },
   setupTestFrameworkScriptFile: '<rootDir>jest/setupTests.ts',
   snapshotSerializers: ['enzyme-to-json/serializer'],
+
+  // Mongodb
+  globalSetup: '<rootDir>jest/setupMongodb.js',
+  globalTeardown: '<rootDir>jest/teardown.js',
+  testEnvironment: '<rootDir>jest/mongo-environment.js',
 };
