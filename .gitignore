@@ -30,3 +30,5 @@ packages/*/lib
 .idea
 
 *.log
+
+jest/globalConfig.json
