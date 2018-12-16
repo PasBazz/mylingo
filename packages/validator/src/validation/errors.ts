@@ -7,3 +7,13 @@ export const validationErrors = {
   'password-invalid-length': { message: 'Password must be at least 6 characters', code: 'password-invalid-length' },
   'password-is-empty': { message: 'Password field is required', code: 'password-is-empty' },
 };
+
+export const registrationErrors = {
+  'email-exists': { message: 'Email already exists', code: 'email-exists' },
+  'user-registration-failed': { message: 'New user registration failed', code: 'user-registration-failed' },
+};
+
+export const loginErrors = {
+  'password-incorrect': { message: 'Password incorrect', code: 'password-incorrect' },
+  'user-is-not-found': { message: 'The user is not found', code: 'user-is-not-found' },
+};
