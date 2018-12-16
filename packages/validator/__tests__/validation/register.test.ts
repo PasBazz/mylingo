@@ -1,5 +1,4 @@
-import { IRegisterErrors, IRegisterInputValues, validateRegister, validateRegisterByKey, ValidationResult } from '@lingo/validator';
-import { validationErrors } from '../../src/validation/errors';
+import { IRegisterErrors, IRegisterInputValues, validateRegister, validateRegisterByKey, validationErrors, ValidationResult } from '@lingo/validator';
 
 describe('Unit tests ащк function validateRegister', () => {
   it('Result of the data validation should be positive', () => {

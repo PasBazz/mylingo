@@ -1,5 +1,4 @@
-import { ILoginErrors, ILoginInputValues, validateLogin, validateLoginByKey, ValidationResult } from '@lingo/validator';
-import { validationErrors } from '../../src/validation/errors';
+import { ILoginErrors, ILoginInputValues, validateLogin, validateLoginByKey, validationErrors, ValidationResult } from '@lingo/validator';
 
 describe('Login verification unit test', () => {
   it('Result of login verification must be positive', () => {
