@@ -15,7 +15,7 @@ module.exports = {
       extends: './babel.config.js',
     },
   },
-  moduleFileExtensions: ['ts', 'tsx', 'js'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
   modulePathIgnorePatterns: ['lib'],
   moduleNameMapper: {
     '@lingo/(.+)$': '<rootDir>packages/$1/src',
