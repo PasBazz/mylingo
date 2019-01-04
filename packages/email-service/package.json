@@ -1,6 +1,6 @@
 {
   "name": "@lingo/email-service",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Email delivery service",
   "author": "Pushkin Alexander",
   "license": "MIT",
