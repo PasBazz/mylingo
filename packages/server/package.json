@@ -1,0 +1,52 @@
+{
+  "name": "@lingo/server",
+  "version": "0.0.1",
+  "description": "Backend",
+  "author": "Pushkin Alexander",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "tsc:w": "tsc --project tsconfig.build.json -w",
+    "bundle": "webpack --webpack.config.js",
+    "server": "nodemon ./src/index.ts --watch",
+    "start": "run-p tsc:w server"
+  },
+  "dependencies": {
+    "@lingo/dal": "^0.0.2",
+    "@lingo/domain-model": "^1.0.2",
+    "@lingo/email-service": "^0.0.2",
+    "@lingo/validator": "^1.0.6",
+    "apollo-server": "^2.2.5",
+    "apollo-server-express": "^2.2.6",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.4.0",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "peerDependencies": {
+    "dotenv": "^6.2.0",
+    "inversify": "^5.0.1",
+    "mongoose": "^5.3.14",
+    "reflect-metadata": "^0.1.12"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/body-parser": "^1.17.0",
+    "@types/errorhandler": "0.0.32",
+    "@types/gravatar": "^1.4.28",
+    "@types/morgan": "^1.7.35",
+    "@types/passport": "^0.4.7",
+    "@types/passport-jwt": "^3.0.1"
+  }
+}
