@@ -1,0 +1,25 @@
+{
+  "name": "@lingo/email-service",
+  "version": "0.0.1",
+  "description": "Email delivery service",
+  "author": "Pushkin Alexander",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json"
+  },
+  "dependencies": {
+    "nodemailer": "^4.7.0"
+  },
+  "peerDependencies": {
+    "inversify": "^5.0.1",
+    "reflect-metadata": "^0.1.12"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^4.6.5"
+  }
+}
