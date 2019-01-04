@@ -1,0 +1,18 @@
+{
+  "name": "@lingo/domain-model",
+  "version": "1.0.0",
+  "description": "Domain model",
+  "author": "Pushkin Alexander",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json"
+  },
+  "peerDependencies": {
+    "mongoose": "^5.3.14"
+  }
+}

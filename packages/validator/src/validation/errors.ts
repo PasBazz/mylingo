@@ -10,10 +10,21 @@ export const validationErrors = {
 
 export const registrationErrors = {
   'email-exists': { message: 'Email already exists', code: 'email-exists' },
+  'registration-failed': { message: 'Registration failed', code: 'registration-failed' },
   'user-registration-failed': { message: 'New user registration failed', code: 'user-registration-failed' },
 };
 
 export const loginErrors = {
+  'login-failed': { message: 'Login failed', code: 'login-failed' },
   'password-incorrect': { message: 'Password incorrect', code: 'password-incorrect' },
   'user-is-not-found': { message: 'The user is not found', code: 'user-is-not-found' },
+};
+
+export const profileErrors = {
+  'activation-failed': { message: 'Activation failed', code: 'activation-failed' },
+  'profile-is-not-found': { message: 'The profile is not found', code: 'profile-is-not-found' },
+};
+
+export const authorizationErrors = {
+  'authorization-failed': { message: 'Authorization failed', code: 'authorization-failed' },
 };

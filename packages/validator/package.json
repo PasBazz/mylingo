@@ -1,17 +1,16 @@
 {
   "name": "@lingo/validator",
-  "version": "0.0.4",
+  "version": "1.0.4",
   "description": "Data validation",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
-  "author": "Pushkin Aleksandr",
+  "author": "Pushkin Alexander",
   "license": "MIT",
   "scripts": {
-    "tsc": "tsc --project tsconfig.build.json",
-    "build": "babel src --root-mode upward --out-dir lib --source-maps --extensions \".ts,.tsx\" --delete-dir-on-start"
+    "build": "tsc --project tsconfig.build.json"
   },
   "dependencies": {
     "validator": "^10.9.0"

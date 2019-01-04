@@ -27,6 +27,7 @@ module.exports = (api) => {
     },
     ignore: ['node_modules'],
     plugins: [
+      ['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true, legacy: false }],
       ['@babel/plugin-proposal-class-properties', { loose: true }],
       ['@babel/plugin-proposal-object-rest-spread', { loose: true, useBuiltIns: true }],
     ],
