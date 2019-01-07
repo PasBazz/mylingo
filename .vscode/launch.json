@@ -19,5 +19,12 @@
             "runtimeArgs": ["-r", "ts-node/register"],
             "args": ["${workspaceFolder}/packages/server/src/index.ts"]
         },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Debug client",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/packages/client"
+          },
     ]
 }
