@@ -7,9 +7,14 @@ const packages = readdirSync(basePath).filter((name) => lstatSync(path.join(base
 module.exports = (baseConfig, env, config) => {
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
-    loader: require.resolve('awesome-typescript-loader'),
+    loader: require.resolve('babel-loader'),
+    options: {
+      presets: [['react-app', { flow: false, typescript: true }]],
+      rootMode: 'upward',
+    },
   });
   config.resolve.extensions.push('.ts', '.tsx');
+
   Object.assign(config.resolve.alias, {
     ...packages.reduce(
       (acc, name) => ({

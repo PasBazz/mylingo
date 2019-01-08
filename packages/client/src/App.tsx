@@ -2,11 +2,11 @@ import * as React from 'react';
 import { hot } from 'react-hot-loader';
 
 import ReactLogo from './components/ReactLogo';
-import { GlobalStyle } from './global/styles';
+import { GlobalStyle } from './themes';
 import { styled } from './themes/';
 
 const Container = styled.div`
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: ${(props) => props.theme.palette.colors.primary};
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@ const Container = styled.div`
 
 const Title = styled.h1`
   font-size: 2.5em;
-  color: ${(props) => props.theme.text.colors.primary};
+  color: ${(props) => props.theme.palette.text.colors.primary};
   text-align: center;
 `;
 
